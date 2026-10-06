@@ -1,0 +1,3 @@
+#!/bin/sh
+# Ferme le dialogue Apple de passkey pour cet utilisateur, sans arrêter le navigateur.
+pkill -TERM -u "$(id -u)" -f '^/System/Library/Frameworks/AuthenticationServices\.framework/.*/com\.apple\.AuthenticationServices\.Helper$'
